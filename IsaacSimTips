@@ -1,0 +1,20 @@
+Isaac Sim Tips
+
+1) Adding Extensions
+ - omni.isaac.examples : config에서 추가
+ - GENERALLY : isaac_sim-2021.2.1/apps/omni.isaac.sim.python.kit에 추가(ex: omni.isaac.environments) *****중요*****
+
+
+2) LIDAR
+ - VisualSphere는 인식 못함. Rigid Body property 있는 경우(DynamicSphere)만 인식
+
+3) Isaac SDK + Isaac Sim
+ - Isaac Sim 내에서 usd 불러온 후 Isaac Util의 Robot Engine Bridge에서 Create Application 후 Play 버튼.
+ - Isaac SDK로 bazel run 하면 둘이 연결되고, localhost:3000에서 그 결과들을 확인가능.
+
+4) Isaac Gmapping
+ - jackal_gmapping.app.json에서 config에 "file_path"설정
+
+5) Isaac Cartographer
+ - differential_base_cartographer.subgraph.json에서 "edges"에서 odometry 관련 source target 연결 (참고 : differential_base_gmapping.subgraph.json과 똑같이 설정)
+ - jackal_cartographer.app.json에서 config에 "output_path", "lua_configuration_directory", "lua_configuration_basename" 설정. (참고 : carter 예제 log_cartographer와 유사하게 설정)
