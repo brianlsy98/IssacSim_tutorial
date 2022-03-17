@@ -1,7 +1,7 @@
 Isaac Sim Tips
 
 1) Adding Extensions
- - omni.isaac.examples : config에서 추가
+ - omni.isaac.examples : config에서 추가 ---> but 이것만 하면 omni.isaac.examples 내에서만 추가된다. 따라서 밑 방법 사용!
  - GENERALLY : isaac_sim-2021.2.1/apps/omni.isaac.sim.python.kit에 추가(ex: omni.isaac.environments) *****중요*****
 
 
